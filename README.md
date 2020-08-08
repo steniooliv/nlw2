@@ -9,7 +9,8 @@
 
 ## Ferramentas Utilizadas
 ### Front-end
-  - **React**, uma lib usada para criarmos nossa interface, com o React conseguimos trazer uma experiência de Single Page Application para o usuário, deixando a navegação muito mais agradável e ágil.
+  - **React**, uma lib usada para criarmos nossa interface, com o React conseguimos trazer uma experiência de Single Page Application para o usuário, deixando a navegação muito mais agradável e ágil
+  - **Axios**, uma ferramenta para auxiliar o nosso frond-end a consumir os dados da API
 
 ### Back-end
   - **Express**, framework utilizado para criar nossa API

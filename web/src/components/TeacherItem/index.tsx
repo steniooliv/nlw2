@@ -1,34 +1,56 @@
 import React from 'react';
+import api from '../../services/api';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
 import './styles.css';
 
-function TeacherItem() {
+export interface Teacher {
+  id: number,
+  avatar: string,
+  bio: string,
+  cost: number,
+  name: string,
+  subject: string,
+  whatsapp: string,
+}
+
+interface TeacherItemProps {
+  teacher: Teacher,
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({teacher}) => {
+
+  function createNewConnection() {
+    api.post('/connections', {user_id: teacher.id})
+  }
+
   return (
     <article className="teacher-item">
       <header>
-        <img src="https://avatars0.githubusercontent.com/u/21336806?s=460&u=e62c6c92cd990a15a2c46213bf6868f58401b685&v=4" alt="Stenio Oliveira"/>
+        <img src={teacher.avatar} alt={teacher.name}/>
         <div>
-          <strong>Stenio Oliveira</strong>
-          <span>Matemática</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
       <p>
-        Entusiasta das melhores tenologias de matemática avançada.
-        <br/> <br/>
-        Apaixonado por cálculos, expressões e soluções de problemas complexos. Já ajudou mais de 200 pessoas a resolver problemas.
+        {teacher.bio}
       </p>
 
       <footer>
         <p>
           Preço/hora
-          <strong>R$ 80,00</strong>
+          <strong>R$ {teacher.cost}</strong>
         </p>
-        <button type="button">
+        <a
+          target="_blank"
+          onClick={createNewConnection}
+          href={`https://wa.me/${teacher.whatsapp}`}
+        >
           <img src={whatsappIcon} alt="WhatsApp"/>
           Entrar em contato
-        </button>
+        </a>
       </footer>
     </article>
   );

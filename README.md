@@ -1,11 +1,8 @@
 <p align="center"><img src="https://github.com/steniooliv/nlw2/blob/master/web/src/assets/images/home.png" width=400 alt="Proffy">
 <h1 align="center">Next Level Week 2 - Proffy<h1>
 </p>
-<p align="center">
-  <a href="https://www.linkedin.com/in/steniooliv/" >
-    <img alt="Stenio" src="https://img.shields.io/badge/steniooliv-in-%230072b1">
-  </a>
-</p>
+  
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/steniooliv/nlw2/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/steniooliv/nlw2/?branch=master) [![Stenio](https://img.shields.io/badge/steniooliv-in-%230072b1)](https://www.linkedin.com/in/steniooliv)
   
 ## Sobre
 *Na segunda edição da NLW criamos uma aplicação OpenSource de uma plataforma de estudo para conectar alunos e professores.*

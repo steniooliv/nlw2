@@ -1,7 +1,12 @@
 <p align="center"><img src="https://github.com/steniooliv/nlw2/blob/master/web/src/assets/images/home.png" width=400 alt="Proffy">
 <h1 align="center">Next Level Week 2 - Proffy<h1>
 </p>
-
+<p align="center">
+  <a href="https://www.linkedin.com/in/steniooliv/" >
+    <img alt="Stenio" src="https://img.shields.io/badge/steniooliv-in-%230072b1">
+  </a>
+</p>
+  
 ## Sobre
 *Na segunda edição da NLW criamos uma aplicação OpenSource de uma plataforma de estudo para conectar alunos e professores.*
 *Ao acessar a aplicação temos a opção de ver os "proffys" disponíveis para dar aulas e podemos entrar em contato com eles.*
